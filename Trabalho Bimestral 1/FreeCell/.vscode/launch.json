@@ -1,0 +1,163 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(gdb) Anexar",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar a reformatação automática para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Definir Tipo de Desmontagem como Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "name": "Launch Extension",
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "preLaunchTask": "npm",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "name": "(gdb) Inicialização do Pipe",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "pipeTransport": {
+        "debuggerPath": "/usr/bin/gdb",
+        "pipeProgram": "<caminho completo para o programa de pipe, como plink.exe>",
+        "pipeArgs": [],
+        "pipeCwd": ""
+      },
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar a reformatação automática para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Definir Tipo de Desmontagem como Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "(gdb) Iniciar",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar a reformatação automática para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Definir Tipo de Desmontagem como Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "(gdb) Anexar",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar a reformatação automática para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Definir Tipo de Desmontagem como Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "(gdb) Iniciar",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar a reformatação automática para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Definir Tipo de Desmontagem como Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Administrador/OneDrive - EDU - Organização Educacional Barão de Mauá/3º Semestre/Laboratório de Estrutura de Dados/Trabalho Bimestral 1/FreeCell",
+      "program": "c:/Users/Administrador/OneDrive - EDU - Organização Educacional Barão de Mauá/3º Semestre/Laboratório de Estrutura de Dados/Trabalho Bimestral 1/FreeCell/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
