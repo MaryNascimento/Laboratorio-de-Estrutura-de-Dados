@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <time.h>
 #include "Game.h"
+#include "Game.cpp"
 
 using namespace std;
 
